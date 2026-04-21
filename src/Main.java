@@ -51,6 +51,7 @@ class Editor {
         this.l=l;
         node=position=0;
     }
+    
     public void forward(){
         StringBuilder s=l.get(node);
         if(position==s.length()) {
