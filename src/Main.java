@@ -2,6 +2,8 @@ import java.util.*;
 import java.io.*;
 import com.murcia.utils.*;
 
+
+
 class Main {
     public static void main(String[] args) throws Exception{
         File file=new File("randomtext.txt");
@@ -36,7 +38,7 @@ class Main {
             else if(input.equals("i")) edit.insert(sc.nextLine());
             else if(input.equals("d")) edit.delete();
             System.out.print("\033[H\033[2J");  
-            System.out.flush();
+         System.out.flush();
             file.delete();
             file.createNewFile();
         }
